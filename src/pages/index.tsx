@@ -5,6 +5,7 @@ import Config from '../config';
 import {PostCollection, Post} from '../posts';
 import {useTheme} from '../theming';
 import Emoji from '../components/Emoji';
+import ExternalLink from '../components/ExternalLink';
 import Layout from '../components/Layout';
 import ReadingNow from '../components/ReadingNow';
 import Link from '../components/Link';
@@ -23,23 +24,14 @@ function Intro(): React.ReactElement {
       <p className="intro">
         Here I write about better ways to build software I find while coding,
         learning and talking to other people. Here is my{' '}
-        <a
-          href="https://github.com/kulyk"
-          target="_blank"
-          rel="noopener noreferrer">
-          GitHub
-        </a>
-        .
+        <ExternalLink href="https://github.com/kulyk">GitHub</ExternalLink>.
       </p>
       <p className="intro">
         If you want to get in touch,{' '}
         <a href={`mailto:${Config.EMAIL}`}>send me an email</a> or ping me on{' '}
-        <a
-          href={`https://twitter.com/${Config.TWITTER_USERNAME}`}
-          target="_blank"
-          rel="noopener noreferrer">
+        <ExternalLink href={`https://twitter.com/${Config.TWITTER_USERNAME}`}>
           Twitter
-        </a>
+        </ExternalLink>
         .
       </p>
       <style jsx>{`
