@@ -7,6 +7,8 @@ async function subscribe(email: string, firstName?: string): Promise<boolean> {
 
   const url = `https://${REGION}.api.mailchimp.com/3.0/lists/${LIST_ID}/members`;
 
+  const encodedToken = Buffer.from(`apikey:${API_KEY}`).toString('base64');
+
   const response = await fetch(url, {
     method: 'POST',
     body: JSON.stringify({
@@ -18,9 +20,7 @@ async function subscribe(email: string, firstName?: string): Promise<boolean> {
     }),
     headers: new Headers({
       Accept: 'application/json',
-      Authorization: `Basic ${Buffer.from(`apikey:${API_KEY}`).toString(
-        'base64',
-      )}`,
+      Authorization: `Basic ${encodedToken}`,
     }),
   });
 
