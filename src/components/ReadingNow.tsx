@@ -11,8 +11,7 @@ type Book = {
 const BOOKS: Book[] = [
   {
     title: 'Life 3.0: Being Human in the Age of AI',
-    url:
-      'https://www.amazon.com/Life-3-0-Being-Artificial-Intelligence/dp/1101946598',
+    url: 'https://www.amazon.com/Life-3-0-Being-Artificial-Intelligence/dp/1101946598',
   },
 ];
 
