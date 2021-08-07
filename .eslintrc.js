@@ -27,6 +27,7 @@ module.exports = {
     'prettier/@typescript-eslint',
     'prettier/react',
     'plugin:react-hooks/recommended',
+    'next',
   ],
   rules: {
     // components/Emoji provides accessible emojis
