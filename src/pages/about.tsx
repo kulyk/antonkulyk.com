@@ -1,6 +1,7 @@
 import {NextPage} from 'next';
 import {NextSeo} from 'next-seo';
 import Emoji from '../components/Emoji';
+import ExternalLink from '../components/ExternalLink';
 import Layout from '../components/Layout';
 import {getUrl} from '../utils';
 
@@ -30,6 +31,12 @@ const About: NextPage<unknown> = () => {
           <a href="https://pix.style">Pix</a>,{' '}
           <a href="https://spacenation.org">Space Nation</a> and other products,
           which unfortunately are under NDA.
+        </p>
+        <p>
+          Currently I work at{' '}
+          <ExternalLink href="https://metabase.com">Metabase</ExternalLink> —
+          the fastest, easiest, open-source tool to share data and analytics
+          inside your company.
         </p>
         <p>
           Also, I&apos;m a Ukrainian{' '}
