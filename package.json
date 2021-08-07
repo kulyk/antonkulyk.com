@@ -25,7 +25,7 @@
     "classnames": "^2.3.1",
     "csstype": "^3.0.8",
     "date-fns": "^2.23.0",
-    "fathom-client": "^3.0.0",
+    "fathom-client": "^3.1.0",
     "feed": "^4.2.2",
     "glob": "^7.1.7",
     "gray-matter": "^4.0.3",
