@@ -199,23 +199,21 @@ export const getStaticPaths: GetStaticPaths<UrlQuery> = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps<
-  PostPageProps,
-  UrlQuery
-> = async context => {
-  const slug = context.params?.slug;
-  if (!slug) {
-    throw new Error('Post not found');
-  }
-  const collection = new PostCollection();
-  const {post, content} = await collection.findBySlug(slug);
-  const mdxContent = await renderToString(content, {scope: post});
-  return {
-    props: {
-      post,
-      content: mdxContent,
-    },
+export const getStaticProps: GetStaticProps<PostPageProps, UrlQuery> =
+  async context => {
+    const slug = context.params?.slug;
+    if (!slug) {
+      throw new Error('Post not found');
+    }
+    const collection = new PostCollection();
+    const {post, content} = await collection.findBySlug(slug);
+    const mdxContent = await renderToString(content, {scope: post});
+    return {
+      props: {
+        post,
+        content: mdxContent,
+      },
+    };
   };
-};
 
 export default Post;

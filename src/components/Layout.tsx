@@ -26,13 +26,8 @@ const NAV_BAR_HEIGHT = 60;
 const WIDTH = '600px';
 
 function Layout(props: LayoutProps): React.ReactElement {
-  const {
-    children,
-    hasNavBar,
-    hasNewsletterSection,
-    hasFooter,
-    ...pageProps
-  } = props;
+  const {children, hasNavBar, hasNewsletterSection, hasFooter, ...pageProps} =
+    props;
   const {theme} = useTheme();
   return (
     <>
