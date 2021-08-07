@@ -1,10 +1,10 @@
-function ShareButton(
-  props: React.HTMLAttributes<HTMLAnchorElement> & {href: string},
-): React.ReactElement {
+import ExternalLink, {ExternalLinkProps} from './ExternalLink';
+
+function ShareButton(props: ExternalLinkProps): React.ReactElement {
   return (
     <>
       {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-      <a className="share-btn" {...props} target="_blank" rel="noreferrer" />
+      <ExternalLink className="share-btn" {...props} />
       <style jsx global>{`
         .share-btn svg {
           width: 2.5rem;

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Emoji from './Emoji';
+import ExternalLink from './ExternalLink';
 import {useTheme} from '../theming';
 import {getRandomListItem} from '../utils';
 
@@ -34,17 +35,14 @@ function Footer(): React.ReactElement {
       <footer id="footer">
         <p>{`Anton Kulyk © ${year}`}</p>
         <div>
-          <a
-            href="https://github.com/kulyk/kulyk.xyz"
-            rel="noreferrer"
-            target="_blank">
+          <ExternalLink href="https://github.com/kulyk/kulyk.xyz">
             GitHub
-          </a>
+          </ExternalLink>
           <a href="/feed.xml">RSS</a>
           <Emoji name={name}>{emoji}</Emoji>
         </div>
       </footer>
-      <style jsx>{`
+      <style jsx global>{`
         #footer {
           display: flex;
           flex-direction: row;

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {Card} from './Card';
 import Emoji from './Emoji';
+import ExternalLink from './ExternalLink';
 
 type Book = {
   title: string;
@@ -25,9 +26,7 @@ function ReadingNow(): React.ReactElement {
         <ul id="book-list">
           {BOOKS.map((book, i) => (
             <li key={i}>
-              <a href={book.url} target="_blank" rel="noreferrer">
-                {book.title}
-              </a>
+              <ExternalLink href={book.url}>{book.title}</ExternalLink>
             </li>
           ))}
         </ul>
