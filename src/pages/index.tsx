@@ -37,7 +37,6 @@ function Intro(): React.ReactElement {
       <style jsx>{`
         .intro {
           line-height: 1.5;
-          font-size: 1.2rem;
           margin-top: 1rem;
         }
         .intro:first-child {
