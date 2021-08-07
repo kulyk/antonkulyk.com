@@ -22,6 +22,15 @@ function Intro(): React.ReactElement {
         engineer from Kyiv, Ukraine <Emoji name="Ukraine flag">🇺🇦</Emoji>
       </p>
       <p className="intro">
+        I work at{' '}
+        <ExternalLink href="https://metabase.com">Metabase</ExternalLink> — the
+        fastest, easiest,{' '}
+        <ExternalLink href="https://github.com/metabase/metabase">
+          open-source
+        </ExternalLink>{' '}
+        tool to share data and analytics inside your company.
+      </p>
+      <p className="intro">
         Here I write about better ways to build software I find while coding,
         learning and talking to other people. Here is my{' '}
         <ExternalLink href="https://github.com/kulyk">GitHub</ExternalLink>.
