@@ -23,8 +23,7 @@ function App({Component, pageProps}: AppProps): React.ReactElement {
         titleTemplate="%s | Anton Kulyk"
         defaultTitle="Anton Kulyk"
         description={[
-          'Anton Kulyk is a full-stack software',
-          'engineer from Kyiv, Ukraine.',
+          'Software engineer from Kyiv, Ukraine.',
           'Writing about better ways to build software.',
           'TypeScript, JavaScript, React, React Native, Node.js',
         ].join(' ')}
