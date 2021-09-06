@@ -47,7 +47,7 @@
     "remark-toc": "^7.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.0",
+    "@babel/core": "^7.15.5",
     "@babel/preset-typescript": "^7.15.0",
     "@next/bundle-analyzer": "^11.1.0",
     "@types/classnames": "^2.3.1",
